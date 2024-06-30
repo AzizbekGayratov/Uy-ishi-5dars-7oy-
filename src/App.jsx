@@ -91,7 +91,7 @@ const App = () => {
           <Route path=":id" element={<Toggler />} />
           <Route path="*" element={<Home />} />
         </Route>
-        <Route path="*" element={<Navigate to="/" />} />
+        <Route path="" element={<Navigate to="/" />} />
       </Routes>
     </Router>
   );
