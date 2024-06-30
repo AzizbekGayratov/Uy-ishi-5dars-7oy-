@@ -2,7 +2,9 @@ import React from "react";
 import { NavLink, Outlet } from "react-router-dom";
 
 const Project = () => {
-  const [project, setProject] = React.useState([]);
+  // Bu yerda keyinchalik fetch ishlatilishi mumkun bolgani uchun useEffect ishlatib quyganman
+  const titles = ["Bathroom", "Bedroom", "Kitchen", "Living-Area"];
+  const [error, setError] = React.useState(null);
 
   React.useEffect(() => {
     const controller = new AbortController();
@@ -10,34 +12,6 @@ const Project = () => {
 
     console.log("mounted");
 
-    const fetchData = async () => {
-      try {
-        const response = await fetch(
-          `${import.meta.env.VITE_BASE_URL}/project`,
-          {
-            signal,
-          }
-        );
-        if (!response.ok) {
-          throw new Error("Network response was not ok");
-        }
-
-        const data = await response.json();
-
-        if (!signal.aborted) {
-          setProject(data);
-        }
-      } catch (error) {
-        if (error.name === "AbortError") {
-          console.log("Aborted");
-        } else {
-          setError(error.message);
-          console.error(`Error fetching data: ${error}`);
-        }
-      }
-    };
-
-    fetchData();
     return () => {
       controller.abort();
     };
@@ -59,7 +33,7 @@ const Project = () => {
           <div className="text-center">
             <nav className="mb-[38px] w-full px-[180px]" id="project-nav">
               <ul className="flex items-center justify-between rounded-[18px] border-[1px] border-brown">
-                {project.map((item, index) => (
+                {titles.map((item, index) => (
                   <li key={index}>
                     <NavLink
                       className="font-Jost text-[20px] font-medium leading-tight py-[25.5px] px-[70px] hover:bg-[#F4F0EC] transition rounded-[18px] block"
