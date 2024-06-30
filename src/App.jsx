@@ -89,9 +89,9 @@ const App = () => {
         <Route path="/services" element={<Services />} />
         <Route path="/project/*" element={<Project />}>
           <Route path=":id" element={<Toggler />} />
-          <Route path="*" element={<Home />} />
+          <Route path="*" element={<Navigate to="Bathroom" />} />
         </Route>
-        <Route path="" element={<Navigate to="/" />} />
+        <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </Router>
   );
