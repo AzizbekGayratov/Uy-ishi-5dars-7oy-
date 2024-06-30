@@ -4,11 +4,11 @@ import { NavLink, Outlet } from "react-router-dom";
 const Project = () => {
   // Bu yerda keyinchalik fetch ishlatilishi mumkun bolgani uchun useEffect ishlatib quyganman
   const titles = ["Bathroom", "Bedroom", "Kitchen", "Living-Area"];
-  const [error, setError] = React.useState(null);
+  // const [error, setError] = React.useState(null);
 
   React.useEffect(() => {
     const controller = new AbortController();
-    const signal = controller.signal;
+    // const signal = controller.signal;
 
     console.log("mounted");
 

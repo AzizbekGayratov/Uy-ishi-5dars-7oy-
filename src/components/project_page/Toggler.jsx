@@ -17,9 +17,14 @@ const Toggler = () => {
 
     const fetchData = async () => {
       try {
-        const response = await fetch(`${import.meta.env.VITE_BASE_URL}/${id}`, {
-          signal,
-        });
+        const response = await fetch(
+          `${import.meta.env.VITE_BASE_URL}/project?category=${id}`,
+          {
+            signal,
+          }
+        );
+
+        console.log(response);
         if (!response.ok) {
           throw new Error("Network response was not ok");
         }
