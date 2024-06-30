@@ -14,19 +14,36 @@ const Home = () => {
 
     const fetchData = async () => {
       try {
-        const response = await fetch(`${import.meta.env.VITE_BASE_URL}/home`, {
+        fetch(`${import.meta.env.VITE_BASE_URL}/home`, {
           signal,
-        });
+        })
+          .then((response) => {
+            console.log(response);
+            if (!response.ok) {
+              throw new Error("Network response was not ok");
+            }
 
-        console.log(response);
-        if (!response.ok) {
-          throw new Error("Network response was not ok");
-        }
+            return response.json();
+          })
+          .then((data) => {
+            if (!signal.aborted) {
+              setData(data);
+            }
+          });
 
-        const data = await response.json();
-        if (!signal.aborted) {
-          setData(data);
-        }
+        // const response = await fetch(`${import.meta.env.VITE_BASE_URL}/home`, {
+        //   signal,
+        // });
+
+        // console.log(response);
+        // if (!response.ok) {
+        //   throw new Error("Network response was not ok");
+        // }
+
+        // const data = await response.json();
+        // if (!signal.aborted) {
+        //   setData(data);
+        // }
       } catch (error) {
         if (error.name === "AbortError") {
           console.log("Aborted");

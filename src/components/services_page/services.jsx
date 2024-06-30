@@ -13,23 +13,39 @@ const Services = () => {
 
     const fetchData = async () => {
       try {
-        const response = await fetch(
-          `${import.meta.env.VITE_BASE_URL}/service`,
-          {
-            signal,
-          }
-        );
+        fetch(`${import.meta.env.VITE_BASE_URL}/service`, {
+          signal,
+        })
+          .then((response) => {
+            console.log(response);
+            if (!response.ok) {
+              throw new Error("Network response was not ok");
+            }
 
-        console.log(response);
-        if (!response.ok) {
-          throw new Error("Network response was not ok");
-        }
+            return response.json();
+          })
+          .then((data) => {
+            if (!signal.aborted) {
+              setService(data);
+            }
+          });
 
-        const data = await response.json();
+        // const response = await fetch(
+        //   `${import.meta.env.VITE_BASE_URL}/service`,
+        //   {
+        //     signal,
+        //   }
+        // );
 
-        if (!signal.aborted) {
-          setService(data);
-        }
+        // console.log(response);
+        // if (!response.ok) {
+        //   throw new Error("Network response was not ok");
+        // }
+
+        // const data = await response.json();
+        // if (!signal.aborted) {
+        //   setService(data);
+        // }
       } catch (error) {
         if (error.name === "AbortError") {
           console.log("Aborted");
