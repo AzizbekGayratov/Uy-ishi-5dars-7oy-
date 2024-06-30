@@ -1,0 +1,189 @@
+{
+  "home": [
+    {
+      "id": 1,
+      "title": "Project Plan",
+      "text": "There are many variations of passages of lorem Ipsum from available, majority.",
+      "link": "/"
+    },
+    {
+      "id": 2,
+      "title": "Interior Work",
+      "text": "There are many variations of passages of lorem Ipsum from available, majority.",
+      "link": "/"
+    },
+    {
+      "id": 3,
+      "title": "Realization",
+      "text": "There are many variations of passages of lorem Ipsum from available, majority.",
+      "link": "/"
+    }
+  ],
+  "service": [
+    {
+      "id": 1,
+      "title": "Project Plan",
+      "text": "There are many variations of passages of lorem Ipsum from available, majority.",
+      "link": "/services"
+    },
+    {
+      "id": 2,
+      "title": "Interior Work",
+      "text": "There are many variations of passages of lorem Ipsum from available, majority.",
+      "link": "/services"
+    },
+    {
+      "id": 3,
+      "title": "Retail Design",
+      "text": "There are many variations of passages of lorem Ipsum from available, majority.",
+      "link": "/services"
+    },
+    {
+      "id": 4,
+      "title": "2d/3d Art Work",
+      "text": "There are many variations of passages of lorem Ipsum from available, majority.",
+      "link": "/services"
+    },
+    {
+      "id": 5,
+      "title": "Interior Work",
+      "text": "There are many variations of passages of lorem Ipsum from available, majority.",
+      "link": "/services"
+    },
+    {
+      "id": 6,
+      "title": "Decoration Work",
+      "text": "There are many variations of passages of lorem Ipsum from available, majority.",
+      "link": "/services"
+    }
+  ],
+  "project": ["Bathroom", "Bedroom", "Kitchen", "Living-Area"],
+  "Bathroom": [
+    {
+      "id": 1,
+      "img": "https://raw.githubusercontent.com/AzizbekGayratov/taskimg/main/bathroom/bathroom1.jpg",
+      "title": "Minimal Bathroom"
+    },
+    {
+      "id": 2,
+      "img": "https://raw.githubusercontent.com/AzizbekGayratov/taskimg/main/bathroom/bathroom2.jpg",
+      "title": "Minimal Bathroom"
+    },
+    {
+      "id": 3,
+      "img": "https://raw.githubusercontent.com/AzizbekGayratov/taskimg/main/bathroom/bathroom3.jpg",
+      "title": "Minimal Bathroom"
+    },
+    {
+      "id": 4,
+      "img": "https://raw.githubusercontent.com/AzizbekGayratov/taskimg/main/bathroom/bathroom4.jpg",
+      "title": "Minimal Bathroom"
+    },
+    {
+      "id": 5,
+      "img": "https://raw.githubusercontent.com/AzizbekGayratov/taskimg/main/bathroom/bathroom5.jpg",
+      "title": "Minimal Bathroom"
+    },
+    {
+      "id": 6,
+      "img": "https://raw.githubusercontent.com/AzizbekGayratov/taskimg/main/bathroom/bathroom6.jpg",
+      "title": "Minimal Bathroom"
+    }
+  ],
+  "Bedroom": [
+    {
+      "id": 1,
+      "img": "https://raw.githubusercontent.com/AzizbekGayratov/taskimg/main/bedroom/project_card_bedroom4.jpg",
+      "title": "Minimal Bedroom"
+    },
+    {
+      "id": 2,
+      "img": "https://raw.githubusercontent.com/AzizbekGayratov/taskimg/main/bedroom/project_card_bedroom5.jpg",
+      "title": "Minimal Bedroom"
+    },
+    {
+      "id": 3,
+      "img": "https://raw.githubusercontent.com/AzizbekGayratov/taskimg/main/bedroom/project_card_bedroom6.jpg",
+      "title": "Minimal Bedroom"
+    },
+    {
+      "id": 4,
+      "img": "https://raw.githubusercontent.com/AzizbekGayratov/taskimg/main/bedroom/project_card_bedroom1.jpg",
+      "title": "Minimal Bedroom"
+    },
+    {
+      "id": 5,
+      "img": "https://raw.githubusercontent.com/AzizbekGayratov/taskimg/main/bedroom/project_card_bedroom2.jpg",
+      "title": "Minimal Bedroom"
+    },
+    {
+      "id": 6,
+      "img": "https://raw.githubusercontent.com/AzizbekGayratov/taskimg/main/bedroom/project_card_bedroom3.jpg",
+      "title": "Minimal Bedroom"
+    }
+  ],
+  "Kitchen": [
+    {
+      "id": 1,
+      "img": "https://raw.githubusercontent.com/AzizbekGayratov/taskimg/main/kitchen/kitchen1.jpg",
+      "title": "Minimal Kitchen"
+    },
+    {
+      "id": 2,
+      "img": "https://raw.githubusercontent.com/AzizbekGayratov/taskimg/main/kitchen/kitchen2.jpg",
+      "title": "Minimal Kitchen"
+    },
+    {
+      "id": 3,
+      "img": "https://raw.githubusercontent.com/AzizbekGayratov/taskimg/main/kitchen/kitchen3.jpg",
+      "title": "Minimal Kitchen"
+    },
+    {
+      "id": 4,
+      "img": "https://raw.githubusercontent.com/AzizbekGayratov/taskimg/main/kitchen/kitchen4.jpg",
+      "title": "Minimal Kitchen"
+    },
+    {
+      "id": 5,
+      "img": "https://raw.githubusercontent.com/AzizbekGayratov/taskimg/main/kitchen/kitchen5.jpg",
+      "title": "Minimal Kitchen"
+    },
+    {
+      "id": 6,
+      "img": "https://raw.githubusercontent.com/AzizbekGayratov/taskimg/main/kitchen/kitchen6.jpg",
+      "title": "Minimal Kitchen"
+    }
+  ],
+  "Living-Area": [
+    {
+      "id": 1,
+      "img": "https://raw.githubusercontent.com/AzizbekGayratov/taskimg/main/living/living1.jpg",
+      "title": "Minimal Living Area"
+    },
+    {
+      "id": 2,
+      "img": "https://raw.githubusercontent.com/AzizbekGayratov/taskimg/main/living/living2.jpg",
+      "title": "Minimal Living Area"
+    },
+    {
+      "id": 3,
+      "img": "https://raw.githubusercontent.com/AzizbekGayratov/taskimg/main/living/living3.jpg",
+      "title": "Minimal Living Area"
+    },
+    {
+      "id": 4,
+      "img": "https://raw.githubusercontent.com/AzizbekGayratov/taskimg/main/living/living4.jpg",
+      "title": "Minimal Living Area"
+    },
+    {
+      "id": 5,
+      "img": "https://raw.githubusercontent.com/AzizbekGayratov/taskimg/main/living/living5.jpg",
+      "title": "Minimal Living Area"
+    },
+    {
+      "id": 6,
+      "img": "https://raw.githubusercontent.com/AzizbekGayratov/taskimg/main/living/living6.jpg",
+      "title": "Minimal Living Area"
+    }
+  ]
+}
